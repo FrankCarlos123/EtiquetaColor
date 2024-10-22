@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Glovo - Generador de Etiquetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://glovo.dhmedia.io/image/customer-assets-glovo/store_logos/e7c8d4541f2116580a2de6df2652e2ffe24bc12b0d7554ae5f236ac1992fbcc1?t=W3siYXV0byI6eyJxIjoibG93In19XQ==" alt="Super Glovo">
+        </div>
+
+        <div class="content">
+            <!-- Sección de URLs -->
+            <div class="input-section">
+                <div class="section-title">URL Imágenes</div>
+                <div id="urlInputs"></div>
+            </div>
+
+            <!-- Sección de Productos -->
+            <div class="input-section">
+                <div class="section-title">Productos</div>
+                <div id="productInputs"></div>
+                <button class="yellow-button" onclick="processInputs()">Cargar Imágenes</button>
+            </div>
+
+            <!-- Sección de Códigos -->
+            <div class="input-section">
+                <div class="section-title">Códigos</div>
+                <div id="codeInputs"></div>
+                <button class="yellow-button" onclick="window.print()">Imprimir</button>
+            </div>
+
+            <!-- Área de Impresión -->
+            <div class="labels-container" id="labelsContainer"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
